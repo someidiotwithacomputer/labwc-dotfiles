@@ -51,6 +51,30 @@
 
   </keyboard>
 
+<mouse>
+  <default />
+
+  <context name="Frame">
+    <!-- Alt + left-click drag anywhere on the window = move -->
+    <mousebind button="A-Left" action="Press">
+      <action name="Focus" />
+      <action name="Raise" />
+    </mousebind>
+    <mousebind button="A-Left" action="Drag">
+      <action name="Move" />
+    </mousebind>
+
+    <!-- Alt + right-click drag anywhere on the window = resize -->
+    <mousebind button="A-Right" action="Press">
+      <action name="Focus" />
+      <action name="Raise" />
+    </mousebind>
+    <mousebind button="A-Right" action="Drag">
+      <action name="Resize" />
+    </mousebind>
+  </context>
+</mouse>
+
 <theme>
   <name>GreyBlack</name>
   <font place="MenuItem">
