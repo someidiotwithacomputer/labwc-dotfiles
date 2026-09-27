@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<labwc_config>
+
+  <core>
+    <decoration>server</decoration>
+    <gap>0</gap>
+  </core>
+
+  <!-- Kill all titlebars/borders on every window -->
+  <windowRules>
+    <windowRule identifier="*" serverDecoration="no" />
+  </windowRules>
+
+  <keyboard>
+    <default />
+
+    <!-- Close focused window -->
+    <keybind key="W-q">
+      <action name="Close" />
+    </keybind>
+
+    <!-- App picker -->
+    <keybind key="W-d">
+      <action name="Execute" command="wofi --show drun" />
+    </keybind>
+
+    <!-- Fullscreen -->
+    <keybind key="W-f">
+      <action name="ToggleFullscreen" />
+    </keybind>
+
+    <!-- Halves, with combine="yes" so two quick presses (e.g. Left then Up)
+         merge into a quarter/corner tile (Up-Left, Up-Right, Down-Left, Down-Right) -->
+    <keybind key="W-Left">
+      <action name="SnapToEdge" direction="left" combine="yes" />
+    </keybind>
+    <keybind key="W-Right">
+      <action name="SnapToEdge" direction="right" combine="yes" />
+    </keybind>
+    <keybind key="W-Up">
+      <action name="SnapToEdge" direction="up" combine="yes" />
+    </keybind>
+    <keybind key="W-Down">
+      <action name="SnapToEdge" direction="down" combine="yes" />
+    </keybind>
+
+  <!-- Screenshot -->
+  <keybind key="Print">
+    <action name="Execute" command="flameshot gui" />
+  </keybind>
+
+  </keyboard>
+
+<theme>
+  <name>GreyBlack</name>
+  <font place="MenuItem">
+    <name>sans</name>
+    <size>9</size>
+  </font>
+</theme>
+
+</labwc_config>
