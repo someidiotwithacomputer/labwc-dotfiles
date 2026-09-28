@@ -1,2 +1,5 @@
+/usr/libexec/xdg-desktop-portal-wlr &
+/usr/libexec/xdg-desktop-portal &
 swaybg -i /home/user/Downloads/gripen.jpg -m fill &
 flameshot &
+waybar &

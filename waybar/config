@@ -1,0 +1,20 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 22,
+  "modules-left": [],
+  "modules-center": [],
+  "modules-right": ["battery", "clock"],
+
+  "battery": {
+    "format": "BAT {capacity}%",
+    "format-charging": "BAT {capacity}% (charging)",
+    "format-full": "BAT {capacity}%",
+    "states": { "warning": 20, "critical": 10 }
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip": false
+  }
+}

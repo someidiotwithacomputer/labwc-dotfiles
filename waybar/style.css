@@ -1,0 +1,28 @@
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+window#waybar {
+    background-color: #1a1a1a;
+    color: #dcdcdc;
+    border-bottom: 1px solid #000000;
+}
+
+#battery, #clock {
+    padding: 0 10px;
+    background-color: #1a1a1a;
+    color: #dcdcdc;
+}
+
+#battery.warning {
+    color: #ffffff;
+}
+
+#battery.critical {
+    color: #ffffff;
+    background-color: #555555;
+}
